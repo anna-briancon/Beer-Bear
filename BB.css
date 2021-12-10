@@ -20,7 +20,7 @@ input:focus::-moz-placeholder {
     margin: 3px 0px 0px 20px;
     padding: 5px 0px 5px 0px;
     border-width: 0px;
-    font-family: " Arial Narrow", Arial, sans-serif;
+    font-family: "Arial Narrow", Arial, sans-serif;
     font-size: 12px;
     color: #828282;
     width: 70%;
@@ -45,4 +45,13 @@ input:focus::-moz-placeholder {
 }
 #button-submit::-moz-focus-inner {
     border: 0;
+}
+header{
+    background-color: #c4c4c4;
+}
+article{
+    margin: auto;
+    columns: 3;
+    column-gap: 5%;
+    column-rule: solid 1px;
 }
