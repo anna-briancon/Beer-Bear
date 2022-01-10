@@ -1,62 +1,64 @@
-html{
+html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url(img/fond2.jpg);
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
+
 header {
     background-color: #52514c;
-    padding:20px 0px;  
+    padding: 20px 0px;
     width: 100%;
 }
-#titre{
+
+#titre {
     color: rgb(255, 220, 65);
-    text-shadow: -3px 0 black, 0 3px black,
-    3px 0 black, 0 -3px black ;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
-#bear{
-    text-shadow: -2px 0 rgb(255, 220, 65), 0 2px rgb(255, 220, 65),
-      2px 0 rgb(255, 220, 65), 0 -2px rgb(255, 220, 65) ;
+
+#bear {
+    text-shadow: -2px 0 rgb(255, 220, 65), 0 2px rgb(255, 220, 65), 2px 0 rgb(255, 220, 65), 0 -2px rgb(255, 220, 65);
 }
-#head>img{
+
+#head>img {
     position: absolute;
     margin-left: 3%;
 }
-#head>h1{
+
+#head>h1 {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 70px;
-    
 }
 
-nav{
+nav {
     text-align: center;
-    position:static;
+    position: static;
     font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
     padding: 0.5%;
     margin: auto;
     font-size: 20px;
 }
 
-nav>a{
+nav>a {
     margin: 5%;
     text-decoration: none;
     color: black;
     border-bottom: 2px solid transparent;
 }
-nav a:hover{
-    color:  gold;
-    border-bottom: 2px solid gold;
 
+nav a:hover {
+    color: gold;
+    border-bottom: 2px solid gold;
 }
+
 section {
     text-align: center;
     background-image: url(img/imgbanderole4.webp);
     background-size: 100%;
-    background-repeat: no-repeat;
     padding: 5%;
     box-shadow: 1px 5px 12px rgb(8, 8, 8)inset;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -71,55 +73,111 @@ section {
 article {
     margin-top: 2%;
     margin-bottom: 2%;
-    
     columns: 3;
     column-gap: 5%;
     column-rule: solid 1px;
     box-shadow: 1px 5px 12px rgb(8, 8, 8)inset;
     padding: 1%;
+}
 
-}
-footer{
+footer {
     background-color: #52514c;
-    padding:20px 0px;  
+    padding: 20px 0px;
     width: 100%;
-     box-shadow: 1px 1px 12px rgb(8, 8, 8);
+    box-shadow: 1px 1px 12px rgb(8, 8, 8);
 }
-footer>img{
-    
+
+footer>img {
     margin-left: 3%;
 }
-footer>p{
-   display: inline;
-   font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
 
+footer>p {
+    display: inline;
+    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
 }
-h3{
+
+.reseaux {
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+}
+
+h3 {
     text-align: center;
 }
-#entreprise{
+
+#entreprise {
     box-shadow: 1px 5px 12px rgb(8, 8, 8)inset;
-
-    padding:1%;
-    margin:2%;
+    padding: 1%;
+    margin: 2%;
 }
-table{
+
+table {
     border-collapse: collapse;
-  border: 3px solid rgb(90, 178, 236);
-
-
+    border: 3px solid rgb(90, 178, 236);
 }
-th{
+
+th {
     border: thin solid #6495ed;
 }
-td{
+
+td {
     border: thin solid #6495ed;
-    padding-right:1%;
-    padding-left:1%;
+    padding-right: 1%;
+    padding-left: 1%;
 }
-#pestel{
+
+#pestel {
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 2%;
     box-shadow: 1px 1px 12px rgb(8, 8, 8);
+}
+
+
+/*Le formulaire*/
+
+input[type]:valid {
+    border-right: 8px solid green;
+}
+
+input[type]:invalid {
+    border-right: 8px solid red;
+}
+
+#email::after {
+    content: "(required)";
+    color: red;
+}
+
+#nom::after {
+    content: "(required)";
+    color: red;
+}
+
+[required] {
+    border: 1px solid orange;
+}
+
+#go {
+    background-color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.5%;
+}
+
+#go:hover {
+    background-color: white;
+    transform: scale(1.5);
+}
+
+form {
+    text-align: center;
+    margin-bottom: 3%;
+    padding: 1%;
+    box-shadow: 1px 1px 12px rgb(8, 8, 8);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }

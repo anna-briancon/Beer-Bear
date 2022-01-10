@@ -8,18 +8,30 @@
 </head>
 <header>
     <div id="head">
-    <img src="img/Logo.png" width="104" height="104"/>
-    
-    <h1><span id="titre">Beer</span> and <span id="bear">Bear</span></h1>
-</div>
+        <img src="img/Logo.png" width="104" height="104" />
+
+        <h1><span id="titre">Beer</span> and <span id="bear">Bear</span></h1>
+    </div>
     <div id="menu">
 
         <nav>
-            <a href="AcceuilBB.html">Page d'acceuil</a>
-            <a href="entreprise.html">Notre entreprise</a>
-            <a href="PESTEL.html">Analyse PESTEL</a>
-            <a href="Contacts.html">Contacts</a>
-            <a href="Mentionslegales.html">Mentions légales</a>
+            <a href="AcceuilBB.html">
+                <img src="img/accueil.png" width="2%"></img>
+                Accueil
+            </a>
+            <a href="entreprise.html">
+                <img src="img/information.png" width="2%"></img>
+                Notre entreprise
+            </a>
+            <a href="PESTEL.html">
+                <img src="img/lanalyse-des-donnees.png" width="2%"></img>
+                Analyse PESTEL</a>
+            <a href="Contacts.html">
+                <img src="img/contact.png" width="2%"></img>
+                Contacts</a>
+            <a href="Mentionslegales.html">
+                <img src="img/marteau.png" width="2%"></img>
+                Mentions légales</a>
         </nav>
     </div>
 </header>
@@ -27,6 +39,7 @@
 <section>
     <h1>Contact</h1>
 </section>
+
 <body>
     <h3>Nous contacter</h3>
     <form>
@@ -34,12 +47,10 @@
             <h3>Nom :</h3>
             <input name="name" type="text" placeholder="champs requis" required>
         </div>
-
-        <div class='URL'>
-            <h3>URL :</h3>
-            <input type="text" name="url" placeholder="https://">
+        <div class='Prenom'>
+            <h3>Prénom :</h3>
+            <input name="name" type="text" placeholder="champs requis" required>
         </div>
-
         <div class='E-Mail'>
             <h3>E-Mail :</h3>
             <input type="email" name="email" placeholder="jjjj@gmail.com" required>
@@ -49,13 +60,31 @@
             <h3>Birth date :</h3>
             <input type="date" results="10" name="jj/mm/aa" placeholder="rechercher" autofocus autocomplete="off" required>
         </div>
-
+        <div class='Commentaire'>
+            <h3>Commentaire :</h3>
+            <textarea name="com" type="text" placeholder="Votre question" required></textarea>
+        </div>
         <br>
-        <input id="go" type="submit" value="Envoyer">
+        <button id="go" type="submit">Envoyer</button>
     </form>
 </body>
 <footer>
-    <img src="img/Logo.png"width="104" height="104"></img>
+    <div class="reseaux">
+        <p> Suivez nous :</p>
+        <a href="https://twitter.com/?lang=fr" title="lien vers twitter">
+            <img src="img/twitter.png" width="2%"></img>
+        </a>
+        <a href="https://fr-fr.facebook.com/" title="lien vers facebook">
+            <img src="img/facebook.png" width="2%"></img>
+        </a>
+        <a href="https://www.instagram.com/?hl=fr" title="lien vers instagram">
+            <img src="img/instagram.png" width="2%"></img>
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ/" title="lien vers youtube">
+            <img src="img/youtube.png" width="2%"></img>
+        </a>
+    </div>
+    <img src="img/Logo.png" width="104" height="104"></img>
     <p>Drink the bear's beer to bear the day</p>
 </footer>
 
