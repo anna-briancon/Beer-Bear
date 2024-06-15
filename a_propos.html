@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="css/style_page.css">
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+IT+Trad:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Logo Bear and Beer">
+                <span class="site-name">Beer and Bear</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a_propos.html">À propos</a></li>
+                    <li><a href="pestel.html">Pestel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions_legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <div class="burger">
+                    <p>☰</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="presentation">
+        <div class="presentation-content">
+            <h2>À propos de notre entreprise</h2>
+            <div id="divider"></div>
+            <h3>Qui sommes nous ? </h3>
+            <p class="highlight">Beer & Bear est une PME spécialisée dans le secteur brassicole (production et vente),
+                qui produit et vend
+                des bières à des entreprises ainsi qu’aux acheteurs directement via l’E-commerce.
+            </p>
+            <p><span class="yellow">Adrien</span> qui se charge donc de la direction, doit gérer toutes les autres
+                directions, est au courant de
+                tout ce qu’il se passe et intervient si quelque chose diffère de la stratégie adaptée à l’avance où
+                simplement si un problème intervient lors des opérations.
+            </p>
+            <p><span class="yellow">Mathis</span> qui se charge de l’approvisionnement, doit gérer tous les flux entrant
+                dans l’entreprise,
+                c’est-à-dire les ressources dont nous avons besoin pour la production de nos bières. Nous recruterons un
+                employé afin qu’il s’occupe de la production. Il devra gérer toutes les opérations de production.
+                C’est-à-dire, tout le déroulement et les problèmes que l’on peut rencontrer (surplus/pénurie de
+                production, inefficacité ou problèmes de certaines machines) avec la production des différentes bières.
+            </p>
+            <p><span class="yellow">Gaëtan</span> qui se charge de la finance, doit gérer tous les achats faits par
+                l’entreprise, les revenus, les
+                salaires. Il doit donc vérifier que les achats ne dépassent pas les revenus. Il gère de plus, les prêts
+                (s’il y en a) faits aux banques.
+            </p>
+            <p><span class="yellow">Anna</span> et deux autres employés se chargeront du marketing et de la
+                comptabilité, ils devront gérer la vente
+                des produits de l’entreprise, c’est-à-dire leur prix de mise en vente, des promotions (si nécessaire),
+                la publicité et les collaborations. </p>
+            <p><span class="yellow">Lucas</span> qui s’occupe de la GRH, doit gérer tous les problèmes liés aux
+                employés, c’est-à-dire des réclamations sur une augmentation de salaire, la mesure de l’efficacité d’un
+                employé, les congés maladie, des tensions (buts conflictuels, s’il y en a).
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-left">
+            <img src="assets/Logo.png" alt="Logo Beer and Bear" class="footer-logo">
+            <p>Licence 2022 © Beer and Bear</p>
+        </div>
+        <div class="footer-center">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/reseaux/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com/home?lang=fr" target="_blank"><img src="assets/reseaux/twitter.png"
+                        alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/reseaux/instagram.png"
+                        alt="Instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="assets/reseaux/youtube.png"
+                        alt="Youtube"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="contact.html">Contact</a>
+            <a href="mentions_legales.html">Mentions légales</a>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.burger-menu').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+        });
+    });
+</script>
+
+</html>

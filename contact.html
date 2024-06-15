@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style_page.css">
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+IT+Trad:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Logo Bear and Beer">
+                <span class="site-name">Beer and Bear</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a_propos.html">À propos</a></li>
+                    <li><a href="pestel.html">Pestel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions_legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <div class="burger">
+                    <p>☰</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="presentation">
+        <div class="presentation-content">
+            <h2>Contact</h2>
+            <div id="divider"></div>
+    </section>
+    <section class="contact-section">
+        <div class="contact-container">
+            <form action="#" method="post">
+                <label for="last-name">Nom</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="first-name">Prénom</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="contact-button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-left">
+            <img src="assets/Logo.png" alt="Logo Beer and Bear" class="footer-logo">
+            <p>Licence 2022 © Beer and Bear</p>
+        </div>
+        <div class="footer-center">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/reseaux/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com/home?lang=fr" target="_blank"><img src="assets/reseaux/twitter.png"
+                        alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/reseaux/instagram.png"
+                        alt="Instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="assets/reseaux/youtube.png"
+                        alt="Youtube"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="contact.html">Contact</a>
+            <a href="mentions_legales.html">Mentions légales</a>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.burger-menu').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+        });
+    });
+</script>
+
+</html>

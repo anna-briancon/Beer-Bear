@@ -1,126 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <title>PESTEL</title>
-    <link href="BB.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestel</title>
+    <link rel="stylesheet" href="css/style_page.css">
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+IT+Trad:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<header>
-    <div id="head">
-        <img id="logo" src="img/Logo.png" width="104" height="104" />
-        <h1><span id="titre">Beer</span> and <span id="bear">Bear</span></h1>
-    </div>
-    <div id="menu">
-        <nav>
-            <a href="index.html">
-                <img class="img_nav" src="img/accueil.png"></img>
-                Accueil
-            </a>
-            <a href="entreprise.html">
-                <img class="img_nav" src="img/information.png"></img>
-                Notre entreprise
-            </a>
 
-            <a href="Contacts.html">
-                <img class="img_nav" src="img/contact.png"></img>
-                Contacts</a>
-            <a href="Mentionslegales.html">
-                <img class="img_nav" src="img/marteau.png"></img>
-                Mentions légales</a>
-        </nav>
-    </div>
-</header>
-<section>
-    <h1>Analyse PESTEL de Beer & Bear</h1>
-</section>
-<main>
-    <h3>Analyse PESTEL</h3>
-    <div id="tableau">
+<body>
+    <header>
+        <div id="nav">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Logo Bear and Beer">
+                <span class="site-name">Beer and Bear</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a_propos.html">À propos</a></li>
+                    <li><a href="pestel.html">Pestel</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="mentions_legales.html">Mentions légales</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <div class="burger">
+                    <p>☰</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="presentation">
+        <div class="presentation-content">
+            <h2>Analyse pestel</h2>
+            <div id="divider"></div>
+    </section>
+    <section class="table-section">
         <table>
-            <thead>
-                <tr>
-                    <th>
-                        Politique
-                    </th>
-                    <th>
-                        Economie
-                    </th>
-                    <th>
-                        Social
-                    </th>
-                    <th>
-                        Technologie
-                    </th>
-                    <th>
-                        Environnement
-                    </th>
-                    <th>
-                        Legal
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        Corruption, Fiscalité, Réglementation, Force syndicales, Lois, import/export, Lobbying,
-                        </br>
-                        <button class="button_pestel" type="button"><a href="politique.html">Plus d'infos</a></button>
-
-                    </td>
-                    <td>
-                        Taux d’intérêts, Prêts, Crédit, Marché, Prix,
-                        </br>
-                        <button class="button_pestel" type="button"><a href="eco.html">Plus d'infos</a></button>
-
-                    </td>
-                    <td>
-                        Publicité, Classes socioprofessionnels, Offres, Nutri-score
-                        </br>
-                        <button class="button_pestel" type="button"><a href="social.html">Plus d'infos</a></button>
-
-                    </td>
-                    <td>
-                        Production, Fabrication, Développement, Qualité de brassage,
-                        </br>
-                        <button class="button_pestel" type="button"><a href="technologie.html">Plus d'infos</a></button>
-
-                    </td>
-                    <td>
-                        Empreinte carbones, Recyclage, Eco-score,
-                        </br>
-                        <button class="button_pestel" type="button"><a href="environnement.html">Plus d'infos</a></button>
-
-                    </td>
-                    <td>
-                        Droit du travail, Normes, Législations sur les bières, Eco-score,
-                        </br>
-                        <button class="button_pestel" type="button"><a href="legal.html">Plus d'infos</a></button>
-
-                    </td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Politique</th>
+                <th>Economie</th>
+                <th>Social</th>
+                <th>Technologie</th>
+                <th>Environnement</th>
+                <th>Legal</th>
+            </tr>
+            <tr>
+                <td>
+                    Corruption, Fiscalité, Réglementation, Force syndicales, Lois, import/export, Lobbying.
+                    <br>
+                    <button class="button" onclick="showText('text1')">Afficher plus</button>
+                </td>
+                <td>
+                    Taux d’intérêts, Prêts, Crédit, Marché, Prix.
+                    <br>
+                    <button class="button" onclick="showText('text2')">Afficher plus</button>
+                </td>
+                <td>
+                    Publicité, Classes socioprofessionnels, Offres, Nutri-score.
+                    <br>
+                    <button class="button" onclick="showText('text3')">Afficher plus</button>
+                </td>
+                <td>
+                    Production, Fabrication, Développement, Qualité de brassage.
+                    <br>
+                    <button class="button" onclick="showText('text4')">Afficher plus</button>
+                </td>
+                <td>
+                    Empreinte carbones, Recyclage, Eco-score.
+                    <br>
+                    <button class="button" onclick="showText('text5')">Afficher plus</button>
+                </td>
+                <td>
+                    Droit du travail, Normes, Législations sur les bières, Eco-score.
+                    <br>
+                    <button class="button" onclick="showText('text6')">Afficher plus</button>
+                </td>
+            </tr>
         </table>
-    </div>
-</main>
-<footer>
-    <div class="reseaux">
-        <p> Suivez nous :</p>
-        <a href="https://twitter.com/?lang=fr" title="lien vers twitter">
-            <img class="reseaux_img" src="img/twitter.png"></img>
-        </a>
-        <a href="https://fr-fr.facebook.com/" title="lien vers facebook">
-            <img class="reseaux_img" src="img/facebook.png"></img>
-        </a>
-        <a href="https://www.instagram.com/?hl=fr" title="lien vers instagram">
-            <img class="reseaux_img" src="img/instagram.png"></img>
-        </a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ/" title="lien vers youtube">
-            <img class="reseaux_img" src="img/youtube.png"></img>
-        </a>
-    </div>
-    <img src="img/Logo.png" width="104" height="104"></img>
-    <p>Drink the bear's beer to bear the day</p>
-</footer>
+        <div id="text1" class="hidden-text">Politique: Intérêt sur les lois concernant les réglementations sur les
+            bières. Nous allons étudier les différents taux de fiscalités des différents pays afin d’en déduire lequel
+            est le plus bénéfique pour notre entreprise.</div>
+        <div id="text2" class="hidden-text">Économie: Il est nécessaire de surveiller les taux d'intérêts avant de faire
+            des prêts à la banque. Cela permettra donc de limiter les frais d'intérêts. Or, nous devons aussi surveiller
+            de très près le marché brassicole, son évolution et donc fixer nos prix en fonction de ce marché. </div>
+        <div id="text3" class="hidden-text">Social: Nous étudions quelle population est la plus visée par notre
+            marchandise, en fonction des classes socioprofessionnelles. Nous pouvons donc mettre en place des offres,
+            des événements et des collaborations en fonction du public visé.</div>
+        <div id="text4" class="hidden-text">Technologique: Nous serons toujours à la recherche de la dernière nouvelle
+            technologie de brassage afin d’être plus précis sur la qualité du brassage de la bière. Cependant, nous
+            resterons sur des technologies écologiques. De plus, nous nous tiendrons au courant des nouveautés en
+            matière d’optimisation d’embouteillage.</div>
+        <div id="text5" class="hidden-text">Environnemental: Nous tenterons de limiter notre pollution (empreinte
+            carbone) en réfléchissant sur les emballages de nos produits, comme des emballages recyclables ou même
+            biodégradables. Nous penserons aussi à recycler les bouteilles en verre.</div>
+        <div id="text6" class="hidden-text">Légal: Nous serons aux normes, c’est-à-dire que nous adapterons notre
+            entreprise en fonction des différentes lois des pays. Nous respectons de plus, les lois concernant les
+            employés.</div>
+    </section>
+    <footer>
+        <div class="footer-left">
+            <img src="assets/Logo.png" alt="Logo Beer and Bear" class="footer-logo">
+            <p>Licence 2022 © Beer and Bear</p>
+        </div>
+        <div class="footer-center">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/reseaux/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com/home?lang=fr" target="_blank"><img src="assets/reseaux/twitter.png"
+                        alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/reseaux/instagram.png"
+                        alt="Instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="assets/reseaux/youtube.png"
+                        alt="Youtube"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="contact.html">Contact</a>
+            <a href="mentions_legales.html">Mentions légales</a>
+        </div>
+    </footer>
+</body>
+<script>
+    function showText(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.burger-menu').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+        });
+    });
+</script>
 
 </html>
